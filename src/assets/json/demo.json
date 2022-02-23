@@ -1,0 +1,613 @@
+{
+  "algorithmName": "",
+  "appLabels": [
+    {
+      "key": "deviceArea",
+      "value": "187"
+    },
+    {
+      "key": "manager",
+      "value": "140"
+    },
+    {
+      "key": "tenantId",
+      "value": "system"
+    },
+    {
+      "key": "tenantId",
+      "value": "system"
+    }
+  ],
+  "configurableAttrs": [],
+  "createUser": "885947389656125440",
+  "createUserName": "",
+  "deviceArea": "187",
+  "deviceModelId": "943845059993321473",
+  "deviceType": "Trash",
+  "diyAttrs": [
+    {
+      "label": "预览图片",
+      "type": "image-uploader",
+      "uKey": "image",
+      "value": []
+    },
+    {
+      "label": "安装地址",
+      "type": "location-and-position",
+      "uKey": "address",
+      "value": "广东省广州市南沙区南沙街道南沙高尔夫球会"
+    }
+  ],
+  "groupName": "",
+  "id": "945642857244946432",
+  "isDelete": false,
+  "lastActiveTime": "2022-02-22 11:27:29",
+  "lastOfflineTime": "2022-02-22 11:50:00",
+  "lastOnlineTime": "2022-02-22 11:27:29",
+  "location": {
+    "coordinateSystemType": "GCJ02",
+    "coordinates": [
+      113.568701,
+      22.792309
+    ],
+    "type": "Point"
+  },
+  "malfunctionStatus": "ALARM",
+  "manager": "140",
+  "modelAttrs": [],
+  "name": "059065411285",
+  "nodeCount": 0,
+  "nvrName": "",
+  "onlineStatus": "OFFLINE",
+  "productCode": "smart_trash_can",
+  "productModelId": "944248306854199296",
+  "production": "",
+  "sensorValueAttrs": [
+    {
+      "alias": "",
+      "uKey": "OpenTimes",
+      "value": "1"
+    },
+    {
+      "alias": "",
+      "uKey": "DeviceSN",
+      "value": "059065411285"
+    },
+    {
+      "alias": "",
+      "uKey": "ErrorInfo",
+      "value": "压缩推杆故障;"
+    },
+    {
+      "alias": "",
+      "uKey": "TrashState",
+      "value": "是"
+    },
+    {
+      "alias": "",
+      "uKey": "TrashCapacity",
+      "value": "80"
+    },
+    {
+      "alias": "",
+      "uKey": "Latitude",
+      "value": "29.51222992"
+    },
+    {
+      "alias": "",
+      "uKey": "CleanTimes",
+      "value": "2"
+    },
+    {
+      "alias": "",
+      "uKey": "Longitude",
+      "value": "120.83133698"
+    },
+    {
+      "alias": "",
+      "uKey": "DoorState",
+      "value": "否"
+    },
+    {
+      "alias": "",
+      "uKey": "NetAQ",
+      "value": "强"
+    },
+    {
+      "alias": "",
+      "uKey": "Battery",
+      "value": "充足"
+    },
+    {
+      "alias": "",
+      "uKey": "SolarState",
+      "value": "否"
+    },
+    {
+      "alias": "",
+      "uKey": "PressTimes",
+      "value": "3"
+    },
+    {
+      "alias": "",
+      "uKey": "LastTime",
+      "value": "2022-02-21 16:06:06"
+    }
+  ],
+  "statusUpdateTime": "2022-02-22 11:50:00",
+  "tenantId": "system",
+  "type": "",
+  "uid": "059065411285",
+  "updateTime": "2022-02-22 11:30:02",
+  "updateUser": "885947389656125440",
+  "updateUserName": "",
+  "vehicleId": "918187984517107712",
+  "vehicleName": "测试灯杆",
+  "showMenu": true,
+  "onlineStatusName": "离线",
+  "productModelName": "智慧垃圾桶",
+  "deviceTypeName": "垃圾桶",
+  "deviceAreaName": "徐州",
+  "managerName": "测试部测试部",
+  "deviceModel": {
+    "code": "smart_trash_can",
+    "configurableAttrDefMap": {},
+    "description": "",
+    "deviceModelId": "943845059993321473",
+    "deviceType": "Trash",
+    "deviceTypeName": "垃圾桶",
+    "downlinkMetadataMap": {},
+    "driverCode": "smart_trash_can",
+    "driverId": "943845059993321472",
+    "existsSensorFlag": true,
+    "id": "944248306854199296",
+    "name": "智慧垃圾桶",
+    "sensorValueAttrDefMap": {
+      "DoorState": {
+        "checkRule": "length<=255",
+        "dataType": "STRING",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "门是否已开",
+        "order": 0,
+        "uKey": "DoorState",
+        "unit": "",
+        "value": "否"
+      },
+      "OpenTimes": {
+        "checkRule": "[0,1000]",
+        "dataType": "INTEGER",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "今日开门次数",
+        "order": 9,
+        "uKey": "OpenTimes",
+        "unit": "",
+        "value": "1"
+      },
+      "ErrorInfo": {
+        "checkRule": "length<=255",
+        "dataType": "STRING",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "实时报警信息",
+        "order": 1,
+        "uKey": "ErrorInfo",
+        "unit": "",
+        "value": "压缩推杆故障;"
+      },
+      "SolarState": {
+        "checkRule": "length<=255",
+        "dataType": "STRING",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "是否在充电",
+        "order": 0,
+        "uKey": "SolarState",
+        "unit": "",
+        "value": "否"
+      },
+      "Battery": {
+        "checkRule": "length<=255",
+        "dataType": "STRING",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "实时电池电压",
+        "order": 0,
+        "uKey": "Battery",
+        "unit": "V",
+        "value": "充足"
+      },
+      "NetAQ": {
+        "checkRule": "length<=255",
+        "dataType": "STRING",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "实时网络质量",
+        "order": 0,
+        "uKey": "NetAQ",
+        "unit": "",
+        "value": "强"
+      },
+      "TrashState": {
+        "checkRule": "length<=255",
+        "dataType": "STRING",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "容量是否已满",
+        "order": 0,
+        "uKey": "TrashState",
+        "unit": "",
+        "value": "是"
+      },
+      "TrashCapacity": {
+        "checkRule": "[0,1000]",
+        "dataType": "INTEGER",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "实时容量",
+        "order": 0,
+        "uKey": "TrashCapacity",
+        "unit": "%",
+        "value": "80"
+      },
+      "CleanTimes": {
+        "checkRule": "[0,1000]",
+        "dataType": "INTEGER",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "今日清桶次数",
+        "order": 8,
+        "uKey": "CleanTimes",
+        "unit": "",
+        "value": "2"
+      },
+      "PressTimes": {
+        "checkRule": "[0,1000]",
+        "dataType": "INTEGER",
+        "defaultValue": "",
+        "isRequired": false,
+        "name": "今日压缩次数",
+        "order": 10,
+        "uKey": "PressTimes",
+        "unit": "",
+        "value": "3"
+      }
+    },
+    "techniqueAttrDefMap": {},
+    "uplinkMetadataMap": {
+      "door": {
+        "commonEventClass": "DeviceEventClass",
+        "description": "",
+        "level": "FAILURE",
+        "name": "门故障",
+        "period": 60,
+        "uKey": "door"
+      },
+      "compress": {
+        "commonEventClass": "DeviceEventClass",
+        "description": "",
+        "level": "FAILURE",
+        "name": "压缩推杆故障",
+        "period": 60,
+        "uKey": "compress"
+      },
+      "smoke": {
+        "commonEventClass": "DeviceEventClass",
+        "description": "",
+        "level": "ALARM",
+        "name": "烟雾报警",
+        "period": 60,
+        "uKey": "smoke"
+      },
+      "battery": {
+        "commonEventClass": "DeviceEventClass",
+        "description": "",
+        "level": "ALARM",
+        "name": "电池低压报警",
+        "period": 60,
+        "uKey": "battery"
+      },
+      "overflow": {
+        "commonEventClass": "DeviceEventClass",
+        "description": "",
+        "level": "ALARM",
+        "name": "溢满告警",
+        "period": 60,
+        "uKey": "overflow"
+      }
+    },
+    "formConfig": {
+      "formDesc": {
+        "mainTitle": {
+          "type": "group",
+          "label": "设备信息"
+        },
+        "uid": {
+          "type": "input",
+          "label": "设备UID",
+          "attrs": {
+            "placeholder": "请输入内容",
+            "maxlength": 50,
+            "clearable": true
+          },
+          "required": true,
+          "defaultAttr": true
+        },
+        "name": {
+          "type": "input",
+          "label": "设备名称",
+          "attrs": {
+            "placeholder": "请输入内容",
+            "clearable": true
+          },
+          "required": true,
+          "defaultAttr": true
+        },
+        "deviceArea": {
+          "type": "data-area",
+          "label": "设备区域",
+          "attrs": {
+            "dataPermissionType": "Device"
+          },
+          "required": true,
+          "defaultAttr": true
+        },
+        "manager": {
+          "type": "data-department",
+          "label": "管理部门",
+          "attrs": {
+            "dataPermissionType": "Device"
+          },
+          "required": true,
+          "defaultAttr": true
+        },
+        "operationalUnit": {
+          "type": "data-operationalUnits",
+          "label": "运维单位",
+          "attrs": {
+            "dataPermissionType": "Device"
+          },
+          "defaultAttr": false,
+          "modified": true
+        },
+        "production": {
+          "type": "dictionary",
+          "label": "生产厂商",
+          "isOptions": true,
+          "options": [
+            "829054028889427968"
+          ],
+          "defaultAttr": true
+        },
+        "vehicleId": {
+          "type": "vehiclecheck-list",
+          "label": "挂载载体",
+          "attrs": {
+            "selectorModel": "single"
+          },
+          "defaultAttr": true
+        },
+        "supplier": {
+          "type": "dictionary",
+          "label": "供应厂商",
+          "isOptions": true,
+          "options": [
+            "829054069955858432"
+          ]
+        },
+        "address": {
+          "type": "location-and-position",
+          "label": "安装地址",
+          "required": true,
+          "defaultAttr": true
+        },
+        "installationDate": {
+          "type": "date",
+          "label": "安装时间",
+          "attrs": {
+            "placeholder": "请输入内容",
+            "value-format": "yyyy-MM-dd"
+          }
+        },
+        "installer": {
+          "type": "dictionary",
+          "label": "安装厂商",
+          "isOptions": true,
+          "options": [
+            "829054125970788352"
+          ]
+        },
+        "qualityAssuranceDate": {
+          "type": "daterange",
+          "label": "质保时间",
+          "attrs": {
+            "placeholder": "请输入内容",
+            "value-format": "yyyy-MM-dd"
+          }
+        },
+        "maintenanceVendor": {
+          "type": "dictionary",
+          "label": "质保厂商",
+          "isOptions": true,
+          "options": [
+            "831194344192532480"
+          ]
+        },
+        "image": {
+          "type": "image-uploader",
+          "label": "图片",
+          "attrs": {
+            "name": "file",
+            "multiple": true,
+            "data": {
+              "appType": "island-asset-device",
+              "directoryId": 0
+            }
+          }
+        }
+      },
+      "order": [
+        "mainTitle",
+        "uid",
+        "name",
+        "deviceArea",
+        "manager",
+        "operationalUnit",
+        "production",
+        "vehicleId",
+        "supplier",
+        "address",
+        "installationDate",
+        "installer",
+        "qualityAssuranceDate",
+        "maintenanceVendor",
+        "image"
+      ]
+    }
+  },
+  "diyAttrMap": {
+    "image": [],
+    "address": "广东省广州市南沙区南沙街道南沙高尔夫球会"
+  },
+  "configurableAttrsMap": {},
+  "translate": {
+    "uid": "059065411285",
+    "name": "059065411285",
+    "deviceArea": "徐州",
+    "manager": "测试部测试部",
+    "production": "",
+    "vehicleId": "测试灯杆",
+    "address": "广东省广州市南沙区南沙街道南沙高尔夫球会",
+    "image": []
+  },
+  "sensorValueAttrFormatter": {
+    "OpenTimes": "1",
+    "DeviceSN": "059065411285",
+    "ErrorInfo": "压缩推杆故障;",
+    "TrashState": "是",
+    "TrashCapacity": "80",
+    "Latitude": "29.51222992",
+    "CleanTimes": "2",
+    "Longitude": "120.83133698",
+    "DoorState": "否",
+    "NetAQ": "强",
+    "Battery": "充足",
+    "SolarState": "否",
+    "PressTimes": "3",
+    "LastTime": "2022-02-21 16:06:06"
+  },
+  "sensorMaps": {
+    "DoorState": {
+      "checkRule": "length<=255",
+      "dataType": "STRING",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "门是否已开",
+      "order": 0,
+      "uKey": "DoorState",
+      "unit": "",
+      "value": "否"
+    },
+    "OpenTimes": {
+      "checkRule": "[0,1000]",
+      "dataType": "INTEGER",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "今日开门次数",
+      "order": 9,
+      "uKey": "OpenTimes",
+      "unit": "",
+      "value": "1"
+    },
+    "ErrorInfo": {
+      "checkRule": "length<=255",
+      "dataType": "STRING",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "实时报警信息",
+      "order": 1,
+      "uKey": "ErrorInfo",
+      "unit": "",
+      "value": "压缩推杆故障;"
+    },
+    "SolarState": {
+      "checkRule": "length<=255",
+      "dataType": "STRING",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "是否在充电",
+      "order": 0,
+      "uKey": "SolarState",
+      "unit": "",
+      "value": "否"
+    },
+    "Battery": {
+      "checkRule": "length<=255",
+      "dataType": "STRING",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "实时电池电压",
+      "order": 0,
+      "uKey": "Battery",
+      "unit": "V",
+      "value": "充足"
+    },
+    "NetAQ": {
+      "checkRule": "length<=255",
+      "dataType": "STRING",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "实时网络质量",
+      "order": 0,
+      "uKey": "NetAQ",
+      "unit": "",
+      "value": "强"
+    },
+    "TrashState": {
+      "checkRule": "length<=255",
+      "dataType": "STRING",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "容量是否已满",
+      "order": 0,
+      "uKey": "TrashState",
+      "unit": "",
+      "value": "是"
+    },
+    "TrashCapacity": {
+      "checkRule": "[0,1000]",
+      "dataType": "INTEGER",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "实时容量",
+      "order": 0,
+      "uKey": "TrashCapacity",
+      "unit": "%",
+      "value": "80"
+    },
+    "CleanTimes": {
+      "checkRule": "[0,1000]",
+      "dataType": "INTEGER",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "今日清桶次数",
+      "order": 8,
+      "uKey": "CleanTimes",
+      "unit": "",
+      "value": "2"
+    },
+    "PressTimes": {
+      "checkRule": "[0,1000]",
+      "dataType": "INTEGER",
+      "defaultValue": "",
+      "isRequired": false,
+      "name": "今日压缩次数",
+      "order": 10,
+      "uKey": "PressTimes",
+      "unit": "",
+      "value": "3"
+    }
+  },
+  "configurableMaps": {}
+}
