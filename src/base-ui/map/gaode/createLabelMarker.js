@@ -4,7 +4,7 @@
  * map、和data数据是必传的
  *  defaultOptions是默认配置项
  *  deleteOptions的主要作用是去除marker中没有用的配置项
- *  数据最好不要超过5000个点，超过会卡顿
+ *  数据最好不要超过10000个点，超过会卡顿
  */
  import _ from 'lodash'
 

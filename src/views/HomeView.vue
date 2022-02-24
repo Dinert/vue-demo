@@ -1,4 +1,5 @@
 <script setup>
+/* eslint-disable no-unused-vars */
 import { onMounted } from "vue";
 import { createMap, createMarker } from "@/base-ui/map/gaode";
 import layout from "@/utils/layout";
@@ -27,13 +28,13 @@ class Map extends layout {
   }
   createMarker(map, data) {
     
-    createMarker({
-      map,
-      data,
-      title: "name",
-      lnglat: 'location.coordinates',
-      setView: true,
-    });
+    // createMarker({
+    //   map,
+    //   data,
+    //   title: "name",
+    //   lnglat: 'location.coordinates',
+    //   setView: true,
+    // });
   }
 }
 let map = new Map();

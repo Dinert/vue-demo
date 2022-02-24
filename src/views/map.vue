@@ -13,7 +13,7 @@ class Map extends layout {
   }
 
   ajaxData() {
-    return axios.get("/json/50000.json");
+    return axios.get("/json/lnglat.json");
   }
   createMap() {
     return new Promise((resolve) => {
@@ -27,7 +27,7 @@ class Map extends layout {
     });
   }
   createMarker(map, data) {
-    data = data.slice(0, 5000)
+    // data = data.slice(0, 0000)
     // createMarker({
     //   map,
     //   data,
@@ -40,17 +40,22 @@ class Map extends layout {
     //   }
     // });
 
-    createLabelMarker({
-      map,
-      data,
-      setView: true
-    })
-
-    // createMassMarks({
+    // createLabelMarker({
     //   map,
     //   data,
-    //   lnglat: 'location.coordinates'
+    //   setView: true
     // })
+
+    createMassMarks({
+      map,
+      data,
+      lnglat: 'location.coordinates',
+      setView: true
+    }).then(mass => {
+      mass.on('click', (e) => {
+        console.log(e)
+      })
+    })
   }
 }
 let map = new Map();

@@ -5,7 +5,7 @@
  * map、和data数据是必传的
  *  defaultOptions是默认配置项
  *  deleteOptions的主要作用是去除marker中没有用的配置项
- *  数据最好不要超过5000个点，超过会卡顿
+ *  数据最好不要超过10000个点，超过会卡顿
  */
 import _ from 'lodash'
 
@@ -52,25 +52,28 @@ import _ from 'lodash'
     }
     delete options[prop]
   }
-
   return new Promise(resolve => {
     // 创建 AMap.LabelsLayer 图层
     // eslint-disable-next-line no-undef
-    let newData = []
     if(deleteOptions.data && deleteOptions.data.length && deleteOptions.data[0].lnglat) {
-      newData = deleteOptions.data
+      options.data = deleteOptions.data
     }else {
+      
+      options.data = []
       for(let i = 0; i < deleteOptions.data.length; i ++) {
         let data = deleteOptions.data[i]
-        data.lnglat = _.get(data, defaultOptions.lnglat, data)
-        data.style = 0;
-        data.name = 'fdsafa'
-        newData.push(data)
+        options.data.push({
+          lnglat: _.get(data, deleteOptions.lnglat, data),
+          style: 0,
+          ...data
+        })
+        typeof deleteOptions.configCallback === 'function' && deleteOptions.configCallback(options)
       }
     }
 
-    let mass = new AMap.MassMarks(newData, options)
+    let mass = new AMap.MassMarks(options.data, options)
     deleteOptions.map && mass.setMap(deleteOptions.map);
+    deleteOptions.setView && deleteOptions.map.setFitView(mass.jT);
     resolve(mass)
   })
  }
