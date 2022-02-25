@@ -5,6 +5,7 @@ import { createMap, createMarker } from "@/base-ui/map/gaode";
 import layout from "@/utils/layout";
 import axios from "axios";
 
+
 class Map extends layout {
   async init() {
     let map = await this.createMap();
@@ -37,6 +38,7 @@ class Map extends layout {
     // });
   }
 }
+
 let map = new Map();
 map.init();
 </script>
