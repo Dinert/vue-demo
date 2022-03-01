@@ -14,9 +14,10 @@ let defaultOptions = {
 }
 
 let defaultOptions2 = {
-  zoom: 4,
+  zoom: 8,
   center: [113.27, 23.13],
-  resizeEnable: true
+  resizeEnable: true,
+  viewMode: '3D'
 }
 
 // // 获取当前地理位置
