@@ -57,7 +57,7 @@ export const createScatterLayer = (options) => {
     return new Promise((resolve) => {
       for(let i = 0; i < deleteOptions.data.length; i ++) {
         let data = deleteOptions.data[i]
-        let tempObj = {type: 'Feature',  geometry: {type: 'Point',  'coordinates': _.get(data, deleteOptions.lnglat, data)}, properties: { data }}
+        let tempObj = {type: 'Feature',  geometry: {type: 'Point',  'coordinates': _.get(data, deleteOptions.lnglat, data)}, properties: { data, index: i }}
         typeof deleteOptions.configCallback === 'function' && deleteOptions.configCallback(tempObj)
         options.geoJSONSource.data.features.push(tempObj)
         typeof deleteOptions.callback === 'function' && deleteOptions.callback.call(options, tempObj) 
