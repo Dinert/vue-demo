@@ -2,7 +2,7 @@ import AMapLoader from '@amap/amap-jsapi-loader'
 import _ from 'lodash'
 
 let defaultOptions = {
-  "key": "42cf421fce690f0566ec730bba75d72a",
+  "key": "af023d6fb6d5113012573aeabd087475",
   "version": "2.0",   // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
   "plugins": [],           // 需要使用的的插件列表，如比例尺'AMap.Scale'等
   "AMapUI": {             // 是否加载 AMapUI，缺省不加载
